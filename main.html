@@ -7,43 +7,47 @@
 </head>
 <body>
 
-<header role="heading" aria-level="1">
-  <h1>My Portfolio</h1>
-</header>
-
-<nav role="navigation">
-  <ul>
-    <li><a href="#about">About Me</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
-
-<main>
-  <section id="about" role="region" aria-labelledby="about-heading">
-    <h2 id="about-heading">About Me</h2>
-    <p>Insert your about me content here...</p>
-  </section>
-
-  <section id="projects" role="region" aria-labelledby="projects-heading">
-    <h2 id="projects-heading">Projects</h2>
-    <ul role="list">
-      <li role="listitem">Project 1</li>
-      <li role="listitem">Project 2</li>
-      <li role="listitem">Project 3</li>
+  <!-- Navigation -->
+  <nav role="navigation" aria-label="Main Navigation">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
-  </section>
+  </nav>
 
-  <section id="contact" role="region" aria-labelledby="contact-heading">
-    <h2 id="contact-heading">Contact</h2>
-    <p>Insert your contact information here...</p>
-  </section>
-</main>
+  <!-- Main Content -->
+  <main>
 
-<footer>
-  <p>© 2024 My Portfolio. All rights reserved.</p>
-</footer>
+    <!-- About Section -->
+    <section id="about">
+      <h1 role="heading" aria-level="1">About Me</h1>
+      <p>Introductory text about yourself...</p>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+      <h2 role="heading" aria-level="2">Portfolio</h2>
+      <ul role="list">
+        <li role="listitem">
+          <img src="portfolio-item1.jpg" alt="Portfolio Item 1">
+          <p>Description of Portfolio Item 1</p>
+        </li>
+        <li role="listitem">
+          <img src="portfolio-item2.jpg" alt="Portfolio Item 2">
+          <p>Description of Portfolio Item 2</p>
+        </li>
+        <!-- Add more portfolio items as needed -->
+      </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2 role="heading" aria-level="2">Contact Me</h2>
+      <p>Contact information...</p>
+    </section>
+
+  </main>
 
 </body>
 </html>
-In this example:
