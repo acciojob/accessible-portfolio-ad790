@@ -1,16 +1,49 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessible Portfolio</title>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+<header role="heading" aria-level="1">
+  <h1>My Portfolio</h1>
+</header>
+
+<nav role="navigation">
+  <ul>
+    <li><a href="#about">About Me</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<main>
+  <section id="about" role="region" aria-labelledby="about-heading">
+    <h2 id="about-heading">About Me</h2>
+    <p>Insert your about me content here...</p>
+  </section>
+
+  <section id="projects" role="region" aria-labelledby="projects-heading">
+    <h2 id="projects-heading">Projects</h2>
+    <ul role="list">
+      <li role="listitem">Project 1</li>
+      <li role="listitem">Project 2</li>
+      <li role="listitem">Project 3</li>
+    </ul>
+  </section>
+
+  <section id="contact" role="region" aria-labelledby="contact-heading">
+    <h2 id="contact-heading">Contact</h2>
+    <p>Insert your contact information here...</p>
+  </section>
+</main>
+
+<footer>
+  <p>© 2024 My Portfolio. All rights reserved.</p>
+</footer>
 
 </body>
-
 </html>
+In this example:
